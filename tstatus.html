@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Status - Time Travel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      transition: padding 0.3s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    .tour-status {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1s ease-out;
+    }
+
+    .tour-status h2 {
+      text-align: center;
+      color: #007073;
+      font-size: 2.8rem;
+      margin-bottom: 40px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
+
+    .status-card {
+      background-color: #ffffff;
+      color: #333;
+      padding: 30px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .status-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .status-card h3 {
+      font-size: 2rem;
+      color: #1a1a1a;
+      margin: 0 0 10px;
+    }
+
+    .status-card p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .status-card .status {
+      font-weight: 600;
+      color: #007073;
+    }
+
+    .status-card .next-activity {
+      font-style: italic;
+      color: #666;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    footer a {
+      color: #0dbdad;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* Animations */
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.8rem;
+      }
+
+      .tour-status h2 {
+        font-size: 2.2rem;
+      }
+
+      .status-card {
+        padding: 20px;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .tour-status h2 {
+        font-size: 1.8rem;
+      }
+
+      .status-card {
+        padding: 15px;
+      }
+
+      footer p {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tour Status</h1>
+    <p>Stay updated on the latest details about our ongoing tours and events!</p>
+  </header>
+
+  <div class="tour-status">
+    <h2>Current Tour Details</h2>
+
+    <!-- Tour Status Cards -->
+    <div class="status-card">
+      <h3>Tour to Paris</h3>
+      <p><strong>Location:</strong> Paris, France</p>
+      <p><strong>Date:</strong> January 26, 2025 - February 2, 2025</p>
+      <p><strong>Status:</strong> <span class="status">Ongoing</span></p>
+      <p><strong>Next Activity:</strong> <span class="next-activity">Eiffel Tower Visit</span></p>
+    </div>
+
+    <div class="status-card">
+      <h3>Tour to Rome</h3>
+      <p><strong>Location:</strong> Rome, Italy</p>
+      <p><strong>Date:</strong> February 5, 2025 - February 12, 2025</p>
+      <p><strong>Status:</strong> <span class="status">Upcoming</span></p>
+      <p><strong>Next Activity:</strong> <span class="next-activity">Colosseum Tour</span></p>
+    </div>
+
+    <div class="status-card">
+      <h3>Tour to Tokyo</h3>
+      <p><strong>Location:</strong> Tokyo, Japan</p>
+      <p><strong>Date:</strong> March 1, 2025 - March 7, 2025</p>
+      <p><strong>Status:</strong> <span class="status">Upcoming</span></p>
+      <p><strong>Next Activity:</strong> <span class="next-activity">Mount Fuji Hike</span></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Time Travel | <a href="index.html">Home</a></p>
+  </footer>
+
+</body>
+</html>

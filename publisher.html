@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Publishers - Time Travel</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #007073;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .publishers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+    }
+    .publisher-card {
+      background-color: white;
+      width: 280px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+    .publisher-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .publisher-card h3 {
+      margin: 15px 0;
+      color: #007073;
+      font-size: 1.5rem;
+    }
+    .publisher-card p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.5;
+    }
+    .publisher-card:hover {
+      transform: translateY(-10px);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #0dbdad;
+      text-decoration: none;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .publisher-card {
+        width: 250px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header {
+        padding: 30px 10px;
+      }
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header p {
+        font-size: 0.9rem;
+      }
+      .publishers {
+        flex-direction: column;
+        align-items: center;
+      }
+      .publisher-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meet Our Publishers</h1>
+    <p>Explore the creative minds behind the stories shared on Time Travel!</p>
+  </header>
+
+  <div class="publishers">
+    <!-- Publisher Card 1 -->
+    <div class="publisher-card">
+      <img src="https://images.unsplash.com/photo-1489653125435-bc14b8330f82?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg5OXwwfDF8c2VhY2h8Mnx8fGZvb2QlMjB0cmlwfGVufDB8fHx8fDE2NzI5NzA4MjE&ixlib=rb-1.2.1&q=80&w=400" alt="John Doe">
+      <h3>John Doe</h3>
+      <p>John is an avid traveler who loves exploring remote destinations. He shares his adventures, tips, and recommendations for the wanderlust community.</p>
+    </div>
+    
+    <!-- Publisher Card 2 -->
+    <div class="publisher-card">
+      <img src="https://images.unsplash.com/photo-1579546924062-5b2e4c06decc?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg5OXwwfDF8c2VhY2h8Mnx8fGZvb2QlMjB0cmlwfGVufDB8fHx8fDE2NzI5NzA4NTU&ixlib=rb-1.2.1&q=80&w=400" alt="Jane Smith">
+      <h3>Jane Smith</h3>
+      <p>Jane is a passionate food lover and travel enthusiast, exploring new cuisines around the world. Follow her journey for culinary travel stories and recommendations.</p>
+    </div>
+
+    <!-- Publisher Card 3 -->
+    <div class="publisher-card">
+      <img src="https://images.unsplash.com/photo-1493638426610-05a7b2c96fef?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg5OXwwfDF8c2VhY2h8OHx8fGZvb2QlMjB0cmlwfGVufDB8fHx8fDE2NzI5NzA4Mzc&ixlib=rb-1.2.1&q=80&w=400" alt="Emily Johnson">
+      <h3>Emily Johnson</h3>
+      <p>Emily focuses on sustainable travel, sharing eco-friendly tips, green destinations, and ways to reduce your carbon footprint while traveling.</p>
+    </div>
+
+    <!-- Publisher Card 4 -->
+    <div class="publisher-card">
+      <img src="https://images.unsplash.com/photo-1571917780523-e9f1661a5c12?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjg5OXwwfDF8c2VhY2h8Nnx8fGZvb2QlMjB0cmlwfGVufDB8fHx8fDE2NzI5NzA4NTg&ixlib=rb-1.2.1&q=80&w=400" alt="Michael Lee">
+      <h3>Michael Lee</h3>
+      <p>Michael is an adventure lover, focusing on adrenaline-pumping activities like hiking, mountaineering, and rock climbing, sharing his experiences from around the globe.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Time Travel. All Rights Reserved. | <a href="index.html">Home</a></p>
+  </footer>
+
+</body>
+</html>
